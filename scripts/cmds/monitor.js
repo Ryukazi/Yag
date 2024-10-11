@@ -18,12 +18,12 @@ module.exports = {
     try {
       const t = Date.now(); 
 
-      const s = ["Korean girl", "Japanese girl", "Philippines girl", "Indonesian girl "];
+      const s = ["Ichigo","Aizen","Rukia" ];
 
       const r = Math.floor(Math.random() * s.length);
       const q = s[r];
 
-      const u = `https://pin-two.vercel.app/pin?search=${encodeURIComponent(q)}`;
+      const u = `https://pin-kshitiz.vercel.app/pin?search=${encodeURIComponent(q)}`;
 
       const a = await axios.get(u);
       const l = a.data.result;
