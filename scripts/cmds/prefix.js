@@ -98,7 +98,7 @@ module.exports = {
 			const musicPrefix = await threadsData.get(event.threadID, "data.musicPrefix") || "$";
 			const songLink = await threadsData.get(event.threadID, "data.songLink") || "Not set";
 
-			const prefixInfo = `┏𝗣𝗥𝗘𝗙𝗜𝗫\n┗━━━⦿【${prefix}】\n🎶 Music Prefix: 【 $ { , } 】\n🎵 Song Link: ${https://youtu.be/-pHfPJGatgE?si=CzLcIwrPDlDn5_wM}`;
+			const prefixInfo = `┏𝗣𝗥𝗘𝗙𝗜𝗫\n┗━━━⦿【${prefix}】\n🎶 Music Prefix: 【 ${  } 】\n🎵 Song Link: ${}`;
 			return message.reply({
 				body: prefixInfo,
 				attachment: await utils.getStreamFromURL(imageUrl)
