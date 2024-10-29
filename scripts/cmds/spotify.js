@@ -5,7 +5,6 @@ const { getStreamFromURL, shortenURL, randomString } = global.utils;
 module.exports = {
   config: {
     name: "spotify",
-    aliases: "s",
     version: "1.0",
     author: "Vex_Kshitiz",
     countDown: 10,
@@ -17,7 +16,7 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args, message }) {
-     api.setMessageReaction("❤️", event.messageID, (err) => {}, true);
+     api.setMessageReaction("🕢", event.messageID, (err) => {}, true);
     try {
       let b = '';
 
