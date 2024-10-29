@@ -93,12 +93,12 @@ module.exports = {
 
 	onChat: async function ({ event, message, threadsData, getLang }) {
 		if (event.body && event.body.toLowerCase() === "prefix") {
-			const imageUrl = "https://i.ibb.co/YX8BnYm/image.gif";
+			const imageUrl = "https://i.ibb.co/fXR2gHw/image.gif";
 			const prefix = await threadsData.get(event.threadID, "data.prefix") || global.GoatBot.config.prefix;
 			const musicPrefix = await threadsData.get(event.threadID, "data.musicPrefix") || "$";
 			const songLink = await threadsData.get(event.threadID, "data.songLink") || "Not set";
 
-			const prefixInfo = `┏𝗣𝗥𝗘𝗙𝗜𝗫\n┗━━━⦿【${prefix}】\n🎶 Music Prefix: 【${musicPrefix}】\n🎵 Song Link: ${songLink}`;
+			const prefixInfo = `┏𝗣𝗥𝗘𝗙𝗜𝗫\n┗━━━⦿【${prefix}】\n🎶 Music Prefix: 【 $ { , } 】\n🎵 Song Link: ${https://youtu.be/-pHfPJGatgE?si=CzLcIwrPDlDn5_wM}`;
 			return message.reply({
 				body: prefixInfo,
 				attachment: await utils.getStreamFromURL(imageUrl)
